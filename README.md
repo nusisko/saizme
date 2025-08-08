@@ -1,4 +1,4 @@
-# Saizme: The Dynamic Image Transformation API
+# Saizme: dynamic image transformation API
 
 <p align="center">
   <img src="https://placehold.co/600x300/1e293b/ffffff?text=Saizme+API&font=raleway" alt="Saizme API Banner">
