@@ -4,7 +4,7 @@
   <img src="https://placehold.co/600x300/1e293b/ffffff?text=Saizme+API&font=raleway" alt="Saizme API Banner">
 </p>
 
-**Saizme** is a powerful backend service that provides a flexible API to upload and dynamically transform your photography for a perfect fit anywhere. Instead of saving countless versions of an image, you store one original and generate variations on-the-fly using simple URL parameters.
+**Saizme** provides a flexible API to upload and dynamically transform your photography for a perfect fit anywhere. Instead of saving countless versions of an image, you store one original and generate variations on-the-fly using simple URL parameters.
 
 It's built with Python and Flask, containerized with Docker, and designed with a clean, modular architecture that allows you to easily switch between storage backends.
 
@@ -125,9 +125,7 @@ Use a `GET` request to the `/api/view/<image_id>` endpoint. Add query parameters
 | `h` | integer | Sets the height for resizing the source image. |
 | `fit` | `crop`, `contain` | **crop**: Resizes and crops to exact w & h.<br>**contain**: Fits within w & h, preserving aspect ratio. |
 | `perfect_fit` | integer | Trims empty space and adds uniform padding of this many pixels. |
-| `pad_w` | integer | Sets the width of the final padded canvas. |
-| `pad_h` | integer | Sets the height of the final padded canvas. |
-| `pad_color` | color name or hex | Sets the background color for canvas padding. |
+| `bg_color` | color name or hex | Sets the background color for canvas padding. |
 | `filter` | `grayscale`, `sepia` | Applies a color filter. |
 | `blur` | integer (1-50) | Applies a Gaussian blur effect. |
 
@@ -140,12 +138,12 @@ http://localhost:8080/api/view/your-image-id.png?w=200&h=200&fit=crop
 
 **Trim whitespace, add 20px padding, then resize result to 500px wide:**
 ```
-http://localhost:8080/api/view/your-image-id.png?perfect_fit=20&w=500
+http://localhost:8080/api/view/your-image-id.png?perfect_fit=20
 ```
 
 **Fit image within 300x300, then place on a 400x400 black canvas:**
 ```
-http://localhost:8080/api/view/your-image-id.png?w=300&h=300&pad_w=400&pad_h=400&pad_color=black
+http://localhost:8080/api/view/your-image-id.png?w=400&h=400&bg_color=black
 ```
 
 🔧 Extending the Application
