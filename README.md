@@ -1,15 +1,11 @@
 # Saizme: dynamic image transformation API
 
-<p align="center">
-  <img src="https://placehold.co/600x300/1e293b/ffffff?text=Saizme+API&font=raleway" alt="Saizme API Banner">
-</p>
-
 **Saizme** provides a flexible API to upload and dynamically transform your photography for a perfect fit anywhere. Instead of saving countless versions of an image, you store one original and generate variations on-the-fly using simple URL parameters.
 
 It's built with Python and Flask, containerized with Docker, and designed with a clean, modular architecture that allows you to easily switch between storage backends.
 
 ---
-## ✨ Features
+## Features
 
 * **On-the-Fly Transformations:** Never store another thumbnail. Generate images in real-time.
 * **Dynamic Resizing & Padding:** Change width (`w`), height (`h`), and add padded borders.
@@ -21,7 +17,7 @@ It's built with Python and Flask, containerized with Docker, and designed with a
 * **Extensible by Design:** A clean adapter pattern makes it simple to add new storage providers (like AWS S3 or Azure Blob).
 
 ---
-## 🚀 Running the Application
+## Running the Application
 
 You can run this application in two modes.
 
@@ -103,7 +99,7 @@ Send a `POST` request with your image file to the `/api/upload` endpoint.
 ```sh
 curl -X POST -F "file=@/path/to/your/photo.jpg" http://localhost:8080/api/upload
 
-✅ **Example Success Response:**
+ **Example Success Response:**
 
 ```json
 {
