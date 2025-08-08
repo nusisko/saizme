@@ -1,10 +1,10 @@
-# Saizme: The Dynamic Image Transformation API
+# Saizme: dynamic image transformation API
 
 <p align="center">
   <img src="https://placehold.co/600x300/1e293b/ffffff?text=Saizme+API&font=raleway" alt="Saizme API Banner">
 </p>
 
-**Saizme** is a powerful backend service that provides a flexible API to upload and dynamically transform your photography for a perfect fit anywhere. Instead of saving countless versions of an image, you store one original and generate variations on-the-fly using simple URL parameters.
+**Saizme** provides a flexible API to upload and dynamically transform your photography for a perfect fit anywhere. Instead of saving countless versions of an image, you store one original and generate variations on-the-fly using simple URL parameters.
 
 It's built with Python and Flask, containerized with Docker, and designed with a clean, modular architecture that allows you to easily switch between storage backends.
 
